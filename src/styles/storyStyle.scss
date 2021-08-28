@@ -1,0 +1,30 @@
+.stories-container {
+  //   box-sizing: border-box;
+  position: relative;
+
+  width: 90%;
+  margin-bottom: 2rem;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .story-card {
+    height: 200px;
+    min-width: 100px;
+    border-radius: 1rem;
+    .story-provider {
+      display: flex;
+      height: 100%;
+      align-items: flex-end;
+      justify-content: center;
+      > p {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+}
